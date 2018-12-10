@@ -1,0 +1,34 @@
+[payment]
+buffer_period = 3
+node_list = []
+
+[network]
+bounty_ip = "fd00::3"
+babel_port = 6872
+rita_hello_port = 4876
+rita_contact_port = 4874
+rita_dashboard_port = 4877
+rita_tick_interval = 5
+bounty_port = 8888
+wg_private_key_path = "/tmp/priv"
+wg_start_port = 60000
+tunnel_timeout_seconds = 900
+peer_interfaces = []
+manual_peers = []
+default_route = []
+
+[exit_client]
+wg_listen_port = 59999
+lan_nics = ["lo"]
+
+[exit_client.reg_details]
+email = "1234@gmail.com"
+
+[dao]
+dao_enforcement = false
+cache_timeout_seconds = 600
+node_list = []
+dao_addresses = []
+
+[log]
+enabled = false
